@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Task
+
+# Model Form Field configuration
+form: $/keios/telekinesis/models/task/fields.yaml
+
+# Model Class name
+modelClass: Keios\Telekinesis\Models\Task
+
+# Default redirect location
+defaultRedirect: keios/telekinesis/tasks
+
+# Create page
+create:
+    title: Create Task
+    redirect: keios/telekinesis/tasks/update/:id
+    redirectClose: keios/telekinesis/tasks
+
+# Update page
+update:
+    title: Edit Task
+    redirect: keios/telekinesis/tasks
+    redirectClose: keios/telekinesis/tasks
+
+# Preview page
+preview:
+    title: Preview Task

@@ -1,0 +1,26 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    label:
+        label: keios.telekinesis::lang.task.label
+
+    updated_at:
+        label: keios.telekinesis::lang.task.updated_at
+
+    servers:
+        label: keios.telekinesis::lang.task.servers
+        relation: servers
+        searchable: true
+        select: label
+
+    outputs:
+        label: keios.telekinesis::lang.task.outputs
+        relation: outputs
+        select: created_at
+        searchable: true

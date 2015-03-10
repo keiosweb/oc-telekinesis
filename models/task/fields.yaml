@@ -1,0 +1,25 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    label:
+        label: keios.telekinesis::lang.task.label
+        required: true
+
+    commands:
+        label: keios.telekinesis::lang.task.commands
+        required: true
+        type: Keios\Telekinesis\FormWidgets\CommandsWidget
+
+    servers:
+        label: keios.telekinesis::lang.task.servers
+        type: relation
+        nameFrom: label
+        emptyOption: keios.telekinesis::lang.task.no_servers
+
+    outputs:
+        label: keios.telekinesis::lang.task.outputs
+        type: partial
+        path: ~/plugins/keios/telekinesis/models/output/_task_outputs_field.htm

@@ -1,0 +1,6 @@
+1.0.1:
+    - First version of Telekinesis
+    - create_tasks_table.php
+    - create_servers_table.php
+    - create_servers_tasks_table.php
+    - create_outputs_table.php

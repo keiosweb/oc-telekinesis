@@ -1,0 +1,14 @@
+<?php
+  /**
+   * @var \Keios\Telekinesis\Models\Server $model
+   */
+  $outputs = $model->outputs()->take(5)->get();
+?>
+<ul>
+<?php foreach ($outputs as $output): ?>
+    <li><?= $output->task->label ?> <?= trans('keios.telekinesis::lang.strings.was_run_on') ?> <?= $model->label ?></li>
+<?php endforeach; ?>
+</ul>
+<?php if (count($outputs === 0)): ?>
+<span class="callout-info"><?= trans('keios.telekinesis::lang.strings.no_outputs') ?></span>
+<?php endif; ?>

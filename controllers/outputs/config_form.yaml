@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Output
+
+# Model Form Field configuration
+form: $/keios/telekinesis/models/output/fields.yaml
+
+# Model Class name
+modelClass: Keios\Telekinesis\Models\Output
+
+# Default redirect location
+defaultRedirect: keios/telekinesis/outputs
+
+# Create page
+create:
+    title: Create Output
+    redirect: keios/telekinesis/outputs/update/:id
+    redirectClose: keios/telekinesis/outputs
+
+# Update page
+update:
+    title: Edit Output
+    redirect: keios/telekinesis/outputs
+    redirectClose: keios/telekinesis/outputs
+
+# Preview page
+preview:
+    title: Preview Output

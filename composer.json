@@ -1,0 +1,15 @@
+{
+    "name": "keios/telekinesis",
+    "description": "Remote server administration package for October CMS",
+    "require": {
+        "laravelcollective/remote": "~5.0"
+    },
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Łukasz Biały",
+            "email": "lukasz@c-call.eu"
+        }
+    ],
+    "minimum-stability": "dev"
+}

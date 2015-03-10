@@ -1,0 +1,43 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    ip:
+        label: keios.telekinesis::lang.server.ip
+        placeholder: 127.0.0.1
+        required: true
+    port:
+        label: keios.telekinesis::lang.server.port
+        default: 22
+        placeholder: 22
+        required: true
+    key_path:
+        label: keios.telekinesis::lang.server.key_path
+        placeholder: /var/lib/october/ssh_keys/ssh.key
+        comment: keios.telekinesis::lang.server.key_comment
+    key_phrase:
+        label: keios.telekinesis::lang.server.key_phrase
+        comment: keios.telekinesis::lang.server.key_phrase_comment
+    username:
+        label: keios.telekinesis::lang.server.username
+        placeholder: root
+    password:
+        label: keios.telekinesis::lang.server.password
+        type: password
+    root:
+        label: keios.telekinesis::lang.server.root
+        default: /
+        required: true
+    label:
+        label: keios.telekinesis::lang.server.label
+        required: true
+    tasks:
+        label: keios.telekinesis::lang.server.tasks
+        type: relation
+        nameFrom: label
+        emptyOption: keios.telekinesis::lang.server.no_tasks
+    outputs:
+        label: keios.telekinesis::lang.server.outputs
+        type: partial
+        path: ~/plugins/keios/telekinesis/models/output/_server_outputs_field.htm
